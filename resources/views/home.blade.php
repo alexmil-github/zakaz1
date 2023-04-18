@@ -41,7 +41,7 @@
                                             <td>{{ $order->max_price }}</td>
                                             <td>{{ $order->price }}</td>
                                             <td>{{ $order->category_id }}</td>
-                                            <td><img src="public/storage/{{ $order->photo_before }}" width="100px"></td>
+                                            <td><img src= "public/storage/{{ $order->photo_before }}" width="100px"></td>
                                             <td>{{ $order->photo_after }}</td>
                                             <td></td>
                                         </tr>
