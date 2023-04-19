@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
         $orders = Order::where([
             'user_id' => Auth::user()->id,
-        ])->get();
+        ])->get()->reverse();
 
         return view('home', ['orders' => $orders]);
     }
