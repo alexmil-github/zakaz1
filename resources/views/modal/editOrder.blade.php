@@ -8,8 +8,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-12">
-{{--                        <form method="POST" action="{{ route('order.update') }}" enctype="multipart/form-data" id="addOrder">--}}
-                        <form method="POST" action="/order/{{$order->id}}" enctype="multipart/form-data" id="addOrder">
+                        <form method="POST" action="/order/{{$order->id}}" enctype="multipart/form-data" id="editOrder_{{ $order->id }}">
                             @csrf
                             @method('PATCH')
 
@@ -119,7 +118,7 @@
 
             </div>
             <div class="modal-footer">
-                <input type="submit" form="addOrder" type="button" class="btn btn-primary">
+                <input type="submit" form="editOrder_{{ $order->id }}" type="button" class="btn btn-primary">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
             </div>
         </div>

@@ -6,6 +6,10 @@ if (status.value === 'Отремонтировано') {
     photo_after.disabled = false;
 }
 
+if (status.value === 'Ремонтируется') {
+    price.disabled = false;
+}
+
 // status.value === 'Отремонтировано' ? photo_after.disabled = false : photo_after.disabled = true;
 
 

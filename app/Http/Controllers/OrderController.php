@@ -85,7 +85,18 @@ class OrderController extends Controller
      */
     public function update(Request $request, $id)
     {
-        dd('4545');
+
+
+       $order = Order::find($id);
+       $order->update([
+          'status' => $request->status,
+          'category_id' => $request->category_id,
+          'price' => $request->price
+       ]);
+
+       $order->save();
+
+       return back();
     }
 
     /**
