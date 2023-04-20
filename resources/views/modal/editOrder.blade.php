@@ -106,14 +106,6 @@
                             </div>
 
                             <div class="row mb-3">
-                                <label for="photo_before" class="col-md-4 col-form-label text-md-end">{{ __('Фото до...') }}</label>
-
-                                <div class="col-md-6">
-                                    <input id="photo_before" type="file" class="form-control" name="photo_before" required>
-                                </div>
-                            </div>
-
-                            <div class="row mb-3">
                                 <label for="photo_after" class="col-md-4 col-form-label text-md-end">{{ __('Фото после...') }}</label>
 
                                 <div class="col-md-6">

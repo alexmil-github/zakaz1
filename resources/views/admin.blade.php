@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.editOrder')
 
 @section('content')
     <div class="container">
