@@ -91,5 +91,6 @@
     </div>
     <!-- Scripts -->
     <script src="{{ asset('js/main.js') }}" ></script>
+    <script src="{{ asset('js/welcome.js') }}" ></script>
 </body>
 </html>

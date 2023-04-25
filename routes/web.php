@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $orders = \App\Models\Order::latest()->take(4)->get();
+
+
+    return view('welcome', ['orders' => $orders]);
 });
 
 Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'admin_page'])->name('admin_page')->middleware('auth');

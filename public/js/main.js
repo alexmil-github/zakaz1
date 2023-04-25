@@ -2,6 +2,8 @@ let status = document.querySelector('#status');
 let price = document.querySelector('#price');
 let photo_after = document.querySelector('#photo_after');
 
+
+
 if (status.value === 'Отремонтировано') {
     photo_after.disabled = false;
 }
@@ -9,6 +11,8 @@ if (status.value === 'Отремонтировано') {
 if (status.value === 'Ремонтируется') {
     price.disabled = false;
 }
+
+
 
 // status.value === 'Отремонтировано' ? photo_after.disabled = false : photo_after.disabled = true;
 
@@ -29,3 +33,7 @@ status.addEventListener('change', function () {
     this.value === 'Ремонтируется' ? price.disabled = false : price.disabled = true;
     this.value === 'Отремонтировано' ? photo_after.disabled = false : photo_after.disabled = true;
 })
+
+
+
+
